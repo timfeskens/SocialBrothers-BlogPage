@@ -1,0 +1,11 @@
+import React from "react"
+
+const Footer = () => {
+  return (
+    <div class="footer">
+        &copy; Copyright Social Brothers - 2020
+    </div>
+  )
+}
+
+export default Footer
