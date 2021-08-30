@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import './App.css';
-//component file
+// Component file(s)
 import IndexContainer from "./components/IndexContainer"
 ReactDOM.render(
-<React.StrictMode>
+< React.StrictMode>
     <IndexContainer/>
   </React.StrictMode>,
   document.getElementById("root"))

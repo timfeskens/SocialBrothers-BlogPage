@@ -2,16 +2,16 @@ import React from "react"
 
 const Header = () => {
   return (
-    <div class="navbar">
-        <div class="navbar-bar">
-            <div class="navbar-bar-brand">
+    <div className="navbar">
+        <div className="navbar-bar">
+            <div className="navbar-bar-brand">
                 <img src="https://socialbrothers.nl/wp-content/themes/social_brothers/assets/SBlogo.svg" alt="social brothers logo SVG"></img>
             </div>
-            <div class="navbar-bar-items">
-                <div class="navbar-bar-titel">
+            <div className="navbar-bar-items">
+                <div className="navbar-bar-titel">
                     <div>Home</div>
                 </div>
-                <div class="navbar-bar-titel">
+                <div className="navbar-bar-titel">
                     Blog
                 </div>
             </div>

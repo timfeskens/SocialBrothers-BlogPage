@@ -2,25 +2,29 @@
   font-family: "Proxima Nova";
   font-style: normal;
   font-weight: normal;
-  src: url('img/Rene Bieder  Milliard Book.woff') format('woff');
+  font-display: swap;
+  src: url('fonts/Rene Bieder  Milliard Book.woff') format('woff');
 }
 
 @font-face {
   font-family: "Proxima Nova";
   font-style:normal;
   font-weight: bold;
-  src: url('img/Rene Bieder  Milliard Bold.woff') format('woff');
+  font-display: swap;
+  src: url('fonts/Rene Bieder  Milliard Bold.woff') format('woff');
 }
-
 
 * {
   font-family: "Proxima Nova";
 }
 
+body {
+  margin: 0;
+}
+
 @media (min-width: 768px)
 {
   .body {
-    /* height: 120vh; */
     width: 750px;
   }
 }
@@ -28,18 +32,15 @@
 @media (min-width: 992px)
 {
   .body {
-    /* height: 120vh; */
     width: 970px;
   }
 }
 
 @media (min-width: 1200px){
   .body {
-    /* height: 120vh; */
     width: 1100px;
   }
 }
-
 
 .body {
   background-color: #F4F4F4;
@@ -61,7 +62,13 @@
   padding: 40px; 
   flex-direction: row;
   justify-content: space-between;
-  
+}
+
+@media (max-width: 610px)
+{
+  .navbar-bar {
+    flex-direction: column;
+  }
 }
 
 .navbar-bar-brand img {
@@ -78,6 +85,7 @@
   font-weight: 600;
   letter-spacing: 0;
   line-height: 22px;
+  justify-content: space-evenly;
 }
 
 .navbar-bar-titel {
@@ -90,18 +98,19 @@
   border-bottom: 2px solid #E95E30;
 }
 
-@media (max-width: 610px)
-{
-  .blog {
-    flex-direction: column !important;
-    padding: 0 !important;
-  }
-}
 
 .blog {
   display: flex;
   flex-direction: row;
   padding: 40px;
+}
+
+@media (max-width: 610px)
+{
+  .blog {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .blog-row {
@@ -169,6 +178,8 @@
   background-color: #F4F4F4;
   border: none;
   font-style: italic;
+  -webkit-appearance:none;
+  color: #868686;
 }
 
 .blog-row textarea{
@@ -187,6 +198,13 @@
   background-color: #ffffff;
 }
 
+
+@media (max-width: 610px)
+{
+  .blog-container {
+    width: auto;
+  }
+}
 .blog-container button {
   margin-top: 20px;
 }
@@ -198,32 +216,28 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px)
+@media (max-width: 610px)
 {
   .blog-item {
-    /* height: 120vh; */
-    width: 100%;
+    width: 100%;;
   }
 }
 
-@media (min-width: 992px)
+@media (min-width: 768px)
 {
   .blog-item {
-    /* height: 120vh; */
     width: 100%;
   }
 }
 
 @media (min-width: 1200px){
   .blog-item {
-    /* height: 120vh; */
     width: 45%;
   }
 }
 
 .blog-item {
   height: 250px;
-  
   margin: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
@@ -264,6 +278,33 @@
   margin: 0;
 }
 
+@media (max-width: 740px)
+{
+  .blog-button {
+    flex-direction: column !important;
+  }
+}
+
+.blog-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-button .hidden {
+  display: none;
+}
+
+.blog-button .page-button {
+  width: 70px;
+}
+
+@media (max-width: 610px)
+{
+  .blog-button .page-button  {
+    width: 30%;;
+  }
+}
+
 button {
   padding: 10px;
   background-color: #E95E30;;
@@ -278,7 +319,6 @@ button {
 
 .footer {
   display: flex;
-  width: 100%;
   background-color: #262626;
   color: #ffffff;
   font-size: 10px;
