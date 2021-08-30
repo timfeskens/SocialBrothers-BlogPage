@@ -34,7 +34,6 @@ nextPage = () => {
 
 getItems(num = this.state.pagenum){
     // Simple GET request using fetch
-    const encodedValue = encodeURIComponent(num);
     fetch(`http://178.62.198.162/api/posts?page=${num}`,{
         headers: {
             token: "pj11daaQRz7zUIH56B9Z"
